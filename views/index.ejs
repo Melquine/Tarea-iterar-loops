@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flow Iterators Example</title>
+</head>
+<body>
+  <h1>Este es el For In Loop de tarea:</h1>
+  <h2>Versiones de los lenguajes</h2>
+  <ul>
+    <% for( key in data.forInTarea) { %>
+      <li><%= key %>: <%= data.forInTarea[key] %></li>
+    <% } %>
+  </ul>
+
+  <h1>For Loop:</h1>
+  <ul>
+    <% data.forLoopData.forEach((item) => { %>
+      <li><%= item %></li>
+    <% }) %>
+  </ul>
+
+  <h1>For Loop:</h1>
+  <ul>
+    <% data.testForData.forEach((item) => { %>
+      <li><%= item %></li>
+    <% }) %>
+  </ul>
+  <h1>For-In Loop:</h1>
+  <ul>
+    <% for (let key in data.forInLoopData) { %>
+      <li><%= key %>: <%= data.forInLoopData[key] %></li>
+    <% } %>
+  </ul>
+
+  <h1>While Loop:</h1>
+  <ul>
+    <% data.whileLoopData.forEach((item) => { %>
+      <li><%= item %></li>
+    <% }) %>
+  </ul>
+
+  <h1>Do-While Loop:</h1>
+  <ul>
+    <% data.doWhileLoopData.forEach((item) => { %>
+      <li><%= item %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
